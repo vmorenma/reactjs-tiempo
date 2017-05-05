@@ -25499,11 +25499,14 @@
 	      null,
 	      React.createElement(Nav, null),
 	      React.createElement(
-	        'h2',
-	        null,
-	        'Main Component'
-	      ),
-	      this.props.children
+	        'div',
+	        { className: 'row' },
+	        React.createElement(
+	          'div',
+	          { className: 'columns medium-6 large-4 small-centered' },
+	          this.props.children
+	        )
+	      )
 	    );
 	  }
 	});
@@ -25600,14 +25603,6 @@
 	});
 
 	module.exports = Nav;
-	// var old = {
-	//   <div>
-	//     <h2>Nav Component</h2>
-	//     <IndexLink to='/' activeClassName="active" activeStyle={{fontWeight:'bold'}}> Get Weather</IndexLink>
-	//     <Link to='/about' activeClassName="active" activeStyle={{fontWeight:'bold'}}> About</Link>
-	//     <Link to='/examples' activeClassName="active" activeStyle={{fontWeight:'bold'}}> Examples</Link>
-	//   </div>
-	// };
 
 /***/ }),
 /* 231 */
@@ -25745,7 +25740,7 @@
 	          React.createElement('input', { type: 'text', ref: 'location', placeholder: 'Enter the location.' }),
 	          React.createElement(
 	            'button',
-	            null,
+	            { className: 'button' },
 	            'Get Weater'
 	          )
 	        )
@@ -29338,14 +29333,49 @@
 	'use strict';
 
 	var React = __webpack_require__(8);
+
+	var _require = __webpack_require__(166),
+	    Link = _require.Link;
+
 	var Examples = React.createClass({
 	  displayName: 'Examples',
 
 	  render: function render() {
 	    return React.createElement(
-	      'h3',
+	      'div',
 	      null,
-	      'Examples Component'
+	      React.createElement(
+	        'h1',
+	        { className: 'text-center' },
+	        'Examples Component'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Exemplos de localizaciones para probar la aplicaci\xF3n.'
+	      ),
+	      React.createElement(
+	        'ol',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/?location=Viladecans' },
+	            'Viladecans'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/?location=Gava' },
+	            'Gava'
+	          )
+	        )
+	      )
 	    );
 	  }
 	});
