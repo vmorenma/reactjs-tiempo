@@ -8,10 +8,10 @@ var Examples = React.createClass({
         <p>Exemplos de localizaciones para probar la aplicación.</p>
         <ol>
           <li>
-            <Link to="/?location=Viladecans" >Viladecans</Link>
+            <Link to="/?location=Viladecans"> Viladecans </Link>
           </li>
           <li>
-            <Link to="/?location=Gava" >Gava</Link>
+            <Link to="/?location=Gava"> Gava </Link>
           </li>
         </ol>
       </div>

@@ -29306,7 +29306,7 @@
 /* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 	// var About = React.createClass({
@@ -29318,9 +29318,47 @@
 	// });
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    'About Component'
+	    React.createElement(
+	      "h1",
+	      { className: "text-center" },
+	      "About Component"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Esto es una aplicacion web construida con la Tecnologia de React"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Herramientas utilizadas"
+	    ),
+	    React.createElement(
+	      "ul",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "https://facebook.github.io/react" },
+	          "React"
+	        ),
+	        " - Este es el Framework usado."
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "http://openweathermap.org" },
+	          "Open Weather Map"
+	        ),
+	        " - Esta es la API usada."
+	      )
+	    )
 	  );
 	};
 
@@ -29363,7 +29401,7 @@
 	          React.createElement(
 	            Link,
 	            { to: '/?location=Viladecans' },
-	            'Viladecans'
+	            ' Viladecans '
 	          )
 	        ),
 	        React.createElement(
@@ -29372,7 +29410,7 @@
 	          React.createElement(
 	            Link,
 	            { to: '/?location=Gava' },
-	            'Gava'
+	            ' Gava '
 	          )
 	        )
 	      )
