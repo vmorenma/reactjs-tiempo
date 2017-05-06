@@ -9,7 +9,7 @@ var React = require('react');
 var About = (props) =>{
   return (
     <div>
-      <h1 className="text-center">About Component</h1>
+      <h1 className="text-center page-title">About Component</h1>
       <p>Esto es una aplicacion web construida con la Tecnologia de React</p>
       <p>Herramientas utilizadas</p>
       <ul>
